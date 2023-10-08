@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="myElement" style="background-color: lightblue;">
+    <h1>Wellcome Muhammad Eshareeb Rajput Web Page</h1>
+</div>
+    <ol>
+    <li>An idle brain is the devil's workshop.</li>
+<li>Fear only two: God, and the man who has no fear of God.</li>
+<li>He who seeks evil will find it.</li>
+<li>Evil (ignorance) is like a shadow.</li>
+<li>The real problem is in the hearts and minds of men.</li>
+</ol>
+<img src="https://cdn.quotesgram.com/img/29/23/2133198574-quote-Suge-Knight-you-got-good-and-bad-people-everywhere-157042.png" alt="Bad">
+<br> <br>
+<button onclick="get()">Click me</button> 
+<br> <br>
+<a href="#" id="hover-link" onmouseover="change1()" onmouseout="reset1()">Hi</a>
+<br><br>
+<a href="#" id="scrollToTopLink">Scroll to Top</a>
+<br><br>
+<a href="#" id="playSoundLink">Play Sound</a>
+<audio id="sound">
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+</audio>
+<br><br>
+<a href="#" id="openWindowLink">Open New Window</a>
+<br><br>
+<button onclick="none()">Click me</button> 
+<br><br>
+<button id="colorChangeButton" onmouseover="changeColor()" onmouseout="resetColor()">Hover me</button>
+<br><br>
+<button id="playSoundButton">Click me to play sound</button>
+<audio id="sound" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+<br><br>
+<div id="elementToHide" style=" background-color: lightblue;">
+    Hi
+</div>
+<br><br>
+<a href="#" id="openWindowLink">Open New Window</a>
+<br><br>
+<label for="myCheckbox">Check this box:</label> <br>
+<input type="checkbox" id="myCheckbox"> <br>
+<button onclick="readCheckboxValue()">Get Checkbox Value</button>
+<br><br>
+<label for="mySelect">Choose an option:</label> <br>
+<select id="mySelect">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+</select> <br>
+<button onclick="readSelectValue()">Get Select Value</button>
+<br><br>
+<div id="myTextField">
+<button onclick="insertText()">Insert Text</button>
+</div>
+<br><br>
+<div id="status"></div>
+<label for="maritalStatus">Are you married?</label> <br>
+<input type="checkbox" id="maritalStatus"> <br>
+<button onclick="updateStatus()">Submit</button>
+</div>
+<br><br>
+<input type="text" id="myInput"> <br>
+<button onclick="fillInput()">Fill Input</button>
+<br><br>
+<h2>Registration Form</h2>
+<form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <span id="nameError" class="error"></span><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <span id="emailError" class="error"></span><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" class="error"></span><br><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+    <span id="confirmPasswordError" class="error"></span><br><br>
+
+    <input type="submit" value="Register">
+</form>
+<script src="app.js"></script>
+</body>
+</html>
